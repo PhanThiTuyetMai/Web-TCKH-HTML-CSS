@@ -1,0 +1,338 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.c1{
+    width: 80%;
+    margin: 0 auto;
+}
+a > p:hover{
+    color: red !important;
+}
+.title{
+    margin-top: 3px;
+    font-size: 18px;
+    border-bottom: 2px solid darkblue;
+    background-color: aquamarine;
+    margin-left: 35px;
+}
+h1.subjectt{
+    border-bottom: 3px solid red;
+    width: 95%;
+}
+h1.subjectt > span {
+    padding: 5px;
+    width: 15%;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+.title1{
+    display: block;
+    padding: 10px;
+    width: 54%;
+    text-align: center;
+    font-weight: bold;
+}
+div.title1 > a > p {
+    color: black;
+}
+.title2{
+    display: block;
+    padding: 15px;
+    width: 90%;
+    text-align: center;
+    margin-right: 18px;
+    font-size: 18px;
+}
+h1.title2{
+    color: black;
+}
+.title2:hover{
+    color: red;
+}
+.anhtin{
+    height: 104px;
+    width: 160px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 8px;
+}
+.anhtin:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    box-shadow: 0 1px 20px 0 blue; 
+    transform: translateY(-5px);
+}
+.title3{
+    padding: 20px;
+    width: 88%;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: auto;
+    text-align: center;
+    margin-right: 250px;
+}
+.title3{
+    color: black !important;
+}
+h1.title2{
+    color: black;
+}
+div.list-person div a img{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+div.list-person div:hover img{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+div.list-person div{
+    list-style-type: none;
+    overflow: hidden;
+    max-width: 920px;
+    margin-right: 50px;
+}
+div.list-person div a{
+    position: relative;
+    display: block;
+}
+div.list-person div a .namee{
+    position: absolute; /*làm cho phần nội dung tác giả đè lên phần ảnh*/
+    color: red;
+    font-weight: bold;
+    letter-spacing: 1px;
+    bottom: 0px;
+    left: 50%;
+    text-transform: uppercase;
+    font-size: 15px;
+    transform: translateX(-50%); 
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+
+}
+div.list-person div a:hover .namee{
+    bottom: 35%;
+    opacity: 1;
+}
+.canhtren{
+    margin-top: 1px;
+}
+div.list div a img{
+    width: 150%;
+    height: 220px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+div.list div:hover img{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+div.list div{
+    list-style-type: none;
+    overflow: hidden;
+    max-width: 950px;
+    margin-right: 50px;
+}
+div.list div a{
+    position: relative;
+    display: block;
+}
+div.list div a .name1{
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 1px;
+    bottom: 8px;
+    left: 55%;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 15px;
+    transform: translateX(-25%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+div.list div a:hover .name1{
+    bottom: 30%;
+    opacity: 1;
+}
+.quangcao{
+    font-display: block;
+    width: 190%;
+    height: 450px;
+    padding: 8rem 0;
+    margin-top: 170px;
+    text-align: center;
+    font-size: 20px;
+    background: linear-gradient(aqua,blue);
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+}
+.cn{
+    display: block;
+    padding: 18px;
+    font-size: 18px;
+    width:91%;
+    text-align: center;
+    color: black;
+}
+.cn:hover{
+    color: red;
+}
+.cnn{
+    display: block;
+    padding: 18px;
+    font-size: 15px;
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin-top: 2px;
+}
+div.listt-person div a img{
+    width: 510px;
+    height: 410px;
+    transition: all 0.3s ease-in-out;
+    display: block;
+}
+div.listt-person div:hover img{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+div.listt-person div{
+    list-style-type: none;
+    overflow: hidden;
+    max-width: 920px;
+    margin-right: 50px;
+}
+div.listt-person div a{
+    position: relative;
+    display: block;
+}
+div.listt-person div a .namee{
+    position: absolute;
+    color: red;
+    font-weight: bold;
+    letter-spacing: 1px;
+    bottom: 0px;
+    left: 50%;
+    text-transform: uppercase;
+    font-size: 15px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+
+}
+div.listt-person div a:hover .namee{
+    bottom: 35%;
+    opacity: 1;
+}
+.anhttin{
+    transition: all 0.3s ease-in-out;
+}
+.anhttin:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    box-shadow: 0px 1px 20px 0px blue; /* bóng đổ theo phương ngang , dọc, kích thước bóng đổ, nhòe */
+    transform: translateY(-5px);
+}
+.boxx2{
+    width: 30% !important;
+    margin-right: 53px;
+}
+.duongke1{
+    border-top: 9px solid black;
+    text-align: left;
+    font-weight: bold;
+}
+.duongke1 > a{
+    color: black;
+    font-size: 18px;
+}
+.duongke2{
+    border-top: 1px solid black;
+    text-align: left;
+    font-weight: bold;
+}
+.duongke2>a{
+    color: black;
+    font-size: 18px;
+}
+.boxx3{
+    width: 40% !important;
+    margin-right: 53px;
+}
+.boxx4{
+    width: 35% !important;
+    margin-right: 53px;
+}
+.quangcao2
+{
+    padding: 22px;
+    height: 150px;
+    text-align: center;
+    width: 35%;
+    text-align: center;
+    border-radius: 5px 0 5px 0;
+    font-size: 22px;
+    background: linear-gradient(white, lightgreen , green);
+    border: 1px dashed black;
+}
+.canh{
+    justify-content: space-around;
+}
+h1.subjecttt{
+    border-bottom: 4px solid red;
+    width: 30%;
+}
+h1.subjecttt > span {
+    padding: 5px;
+    width: 38%;
+    background-color: blue;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    text-align: center;
+}
+.mn{
+    padding: 35px;
+    height: 210px;
+    width: 60%;
+}
+.mn >a{
+    color: crimson;
+}
+.mn >a:hover{
+    color: gold;
+}
+.tren{
+    margin-top: 10px;
+}
+.anhmn{
+    transition: all 0.3s ease-in-out;
+}
+.anhmn:hover{
+    transform: scale(1.1);
+    overflow: hidden;
+    box-shadow: 0px 1px 20px 0px yellow;
+    transform: translateY(-5px);
+}
+.tren1 h2{
+    margin-top: 80px;
+    padding: 14px;
+    width: 25%;
+    align-items: center;
+    text-align: center;
+    margin-left: 450px;
+    border-bottom: 5px dotted gold;
+}
+.tren1 a{
+    color: tomato;
+}
+.tren1 a:hover{
+    color: blue;
+}

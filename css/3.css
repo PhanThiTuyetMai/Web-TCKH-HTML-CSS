@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+}
+.trang{
+    padding-left: 3em;
+}
+.tren1{
+    margin-bottom: 28px;
+}
+.c2{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    background-color: rgb(19, 14, 14);
+}
+h1.dvd{
+    border-bottom: 2px solid red;
+    width: 72%;
+}
+.dvd > span{
+    color: white;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    width: 10%;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.vd1{
+    display: block;
+    padding: 20px;
+    width: 93.5%;
+    text-align: center;
+    color: white;
+}
+.vd1:hover{
+    color: orange;
+}
+.vd2{
+    display: block;
+    padding: 20px;
+    width: 93.5%;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.771);
+    font-weight: bold;
+    font-style: italic;
+}
+.quangcao3{
+    padding: 110px;
+    width: 93.5%;
+    background-color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.vdn1{
+    padding: 35px;
+    height: 120px;
+    width: 170%;
+    color: white;
+    margin-top: auto;
+    text-align: left;
+}
+.canht{
+    margin-right: 10px;
+}
+.canhp{
+    margin-left: 859px;
+}
+.b1{
+    height: 35px;
+    width: 25%;
+    color: black;
+    font-weight: bold;
+
+}
+.tren3{
+    padding: 15px;
+    width: 46%;
+    font-size: 15px;
+    text-align: center;
+    border-top: 2px solid white;
+    margin-left: 30px;
+    color: white;
+    margin-top: 15px;
+
+}
+.top1{
+    margin-top: 12px;
+}
+.videos{
+    overflow: hidden;
+    max-width: 990px;
+}
+.videos>iframe{
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.videos>iframe:hover{
+    transform: scale(1.1);
+}
+.canht iframe{
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.canht iframe:hover{
+    transform: scale(1.1);
+}
+.top1 iframe{
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    max-width: 100%;
+}
+.top1 iframe:hover{
+    transform: scale(1.1);
+}
+.xt{
+    padding: 10px;
+    height: 60px;
+    width: 70%;
+    font-size: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+.xt:hover{
+    background-color: tomato;
+}

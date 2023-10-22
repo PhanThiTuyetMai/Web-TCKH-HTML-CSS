@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGY PM</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="java/1.js"></script>
+    <link href="ảnh/2.jpg" rel="shortcut icon" />
+    <link href="css/1.css" rel="stylesheet" />
+    <link href="css/4.css" rel="stylesheet" />
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="flex canhdeu">
+            <div class="flex">
+                <div>
+                    <video class="vd" autoplay="autoplay" loop="loop" muted="muted">
+                        <source src="video/2.mp4">
+                    </video>
+                </div>
+                <div class="name">
+                    <h1  style="color: yellow; font-family: Brush Script MT; font-size: 55px;">Journal of Science and Technology</h1>
+                    <h1  style="color: red; font-family: Brush Script MT; font-size: 55px;">LOGY PM</h1>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div style="background-color: pink;" class="flex canhben">
+                <div>
+                    <ul class="menu">
+                        <li class="sub"><a href="#">Chuyên Đề</a>
+                            <ul class="menu subcontent">
+                                <li></li>
+                                <li><a href="#">Sở Hữu Trí Tuệ</a></li>
+                                <li><a href="#">Cách Mạng Công Nghiệp 4.0</a></li>
+                                <li><a href="#">Khởi Nghiệp Đổi Mới Sáng Tạo</a></li>
+                                <li><a href="#">Chương Trình Nông Thôn</a></li>
+                                <li><a href="http://127.0.0.1:5500/4.html">Công Trình Nghiêm Cứu Khoa Học</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li class="sub"><a href="#">Ngôn Ngữ </a>
+                            <ul class="menu subcontent">
+                                <li></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Tiếng Việt</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="flex canhben" style="background-color: blue ;">
+                <div>
+                    <ul class="flex menu">
+                        <li><a href="http://127.0.0.1:5500/1.html" class="tieude2"><i class="fas fa-home"></i></a></li>
+                        <li><a href="http://127.0.0.1:5500/2.html" class="tieude2">Tin Tức</a></li>
+                        <li><a href="http://127.0.0.1:5500/3.html" class="tieude2">Video</a></li>
+                        <li><a href="#" class="tieude2">Số Báo</a></li>
+                        <li><a href="#" class="tieude2">Gửi Bài</a></li>
+                        <li><a href="#" class="tieude2">Trợ Giúp</a></li>
+                        <li class="sub"><a href="#" class="tieude2">Khác</a>
+                            <ul class="menu subcontent">
+                                <li><a href="#">Liên Lạc</a></li>
+                                <li><a href="#">Phản Hồi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <div>
+                        <form class="search">
+                            <input type="text" list="suggest" class="searchTerm" placeholder="Bạn muốn tìm gì?">
+                            <datalist id="suggest">
+                                <option value="Tin Tức">
+                                <option value="Video">
+                                <option value="Gửi Bài">
+                                <option value="Số Báo">
+                                <option value="Công Trình Nghiêm Cứu Khoa Học">
+                            </datalist>
+                            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="flex bt-group">
+                            <a href="#" class="bt"><i class="fa-solid fa-user"></i> Đăng Nhập</a>
+                            <a href="http://127.0.0.1:5500/dangnhap.html" class="bt"><i class="fas fa-check"></i> Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="c">
+        <div class="flex ntd">
+            <div class="ngay">
+                <div id="current-time"></div>
+                <script>
+                    var d = new Date();
+                    // Ngày hiện tại
+                    var Day = d.getDate();
+                    // Tháng hiện tại
+                    var Month = d.getMonth()+1;
+                    // Năm hiện tại
+                    var Year = d.getFullYear();
+                    // Gán vào thẻ HTML
+                    document.getElementById('current-time').innerHTML = Day + "/" + Month + "/" + Year;
+                </script>
+            </div>
+            <div width="100%">
+                <div id="wrapper">
+                    <ul class="list-social-media flex">
+                        <li>
+                            <a href="#" class="facebook">
+                                <i class="fa-brands fa-facebook-f"class="fa-brands fa-facebook"class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-facebook-f"class="fa-brands fa-facebook"class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="youtube">
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="c">
+        <div>
+            <h1 class="td">THÔNG TIN VỀ CÁC CÔNG TRÌNH NGHIÊM CỨU, KHOA HỌC</h1>
+        </div>
+        <div class="flex canhben">
+            <div>
+                <div>
+                    <div><h3 style="color: red;">Tìm Kiếm Các Đề Tài</h3></div>
+                    <div>
+                        <div>
+                            <table class="bang">
+                                <tr>
+                                    <td colspan="2">
+                                        <textarea name="description" cols="50" rows="1" placeholder="Từ Khóa"></textarea>
+                                    </td>
+                                    <td>
+                                        <from>
+                                            <select>
+                                                <option value="nam">Năm</option>
+                                                <option value="2018">2018</option>
+                                                <option value="2019">2019</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                            </select>
+                                        </from>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <from>
+                                            <select>
+                                                <option value="khtn">Khoa Học Tự Nhiên</option>
+                                                <option value="lv">Lĩnh Vực</option>
+                                                <option value="yt">Y Tế</option>
+                                                <option value="ct">Công Thương</option>
+                                                <option value="đt">Kế Hoạch Và Đầu Tư</option>
+                                            </select>
+                                        </from>
+                                    </td>
+                                    <td>
+                                        <from>
+                                            <select>
+                                                <option value="cap">Cấp</option>
+                                                <option value="trunguong">Trung Ương</option>
+                                                <option value="tinh">Tỉnh</option>
+                                                <option value="coso">Cơ Sở</option>
+                                                <option value="hoptac">Hợp Tác</option>
+                                            </select>
+                                        </from>
+                                    </td>
+                                    <td>
+                                        <from>
+                                            <select>
+                                                <option value="coquan">Cơ Quan Chủ Trì</option>
+                                                <option value="hue">Ban Dân Tộc Tỉnh Thừa Thiên Huế</option>
+                                                <option value="bthcm">Bảo Tàng Hồ Chí Minh</option>
+                                            </select>
+                                        </from>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="flex but">
+                                <div>
+                                    <input type="submit" name="tk" value="Tìm Kiếm">
+                                </div>
+                                <div>
+                                    <input type="submit" name="tc" value="Tất Cả">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accodion-item active">
+                    <div class="accodion-hearder">
+                        <p>LĨNH VỰC KHOA HỌC TỰ NHIÊN</p>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </div>
+                    <div class="accodion-body">
+                        <div class="ctnc">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>STT</td>
+                                        <td>Mã đề tài</td>
+                                        <td>Tên đề tài, dự án</td>
+                                        <td>Thời gian thực hiện</td>
+                                        <td>Lĩnh Vực</td>
+                                        <td>Cơ quan chủ trì</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2019.0020</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu, xác định nguyên nhân hiện tượng mất nước ao - hồ và sụt giảm tầng nước ngầm tại khu vực xã Phú Vinh và xã Hồng Thượng, huyện A Lưới</a>
+                                        </td>
+                                        <td>2020 - 2020</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Trường Đại học Khoa học Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2010-014</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu ứng dụng mô hình toán để dự báo sóng vùng ven biển tỉnh Thừa Thiên Huế (đã nghiệm thu)</a>
+                                        </td>
+                                        <td>2010 - 2013</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Viện Nghiên cứu và Quản lý Biển và Hải đảo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>2010-001</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu chiết, thu nhận một số nguyên tố quý hiếm từ sa khoáng ven biển tỉnh Thừa Thiên Huế và thử ứng dụng làm chất phát quang</a>
+                                        </td>
+                                        <td>2010 - 2010</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2015-006</td>
+                                        <td>
+                                            <a href="#">Đánh giá tiềm năng nguồn lợi và bảo tồn hệ sinh thái gò, đồi ngầm vùng biển ven bờ tỉnh Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2015 - 2018</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Viện Tài nguyên và Môi trường biển</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>2014-011</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu sự bồi lắng đầm Lập An, tỉnh Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2014 - 2017</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Viện Nghiên cứu và Quản lý Biển và Hải đảo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>2014-004</td>
+                                        <td>
+                                            <a href="#">Đánh giá hiện trạng và xây dựng cơ sở dữ liệu về tài nguyên sinh vật tại tỉnh Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2014 - 2018</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Trường Đại học Khoa học Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>2014-003</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu đặc điểm sinh thái, đề xuất mô hình phát triển cây Mán đỉa (Archidendron clypearia (Jack.) I.Niel) tại Thừa Thiên Huế để tạo nguồn dược liệu</a>
+                                        </td>
+                                        <td>2014 - 2018</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Trường Đại học Khoa học Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>2017-002</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu đặc điểm của các loài bướm ở tỉnh Thừa Thiên Huế và xây dựng quy trình nhân nuôi.</a>
+                                        </td>
+                                        <td>2017 - 2018</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Bảo tàng Thiên nhiên Việt Nam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>TTH.2009-KC.11</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu thành phần và tác dụng dược lý của nấm Linh Chi đặc hữu nuôi trồng tại Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2009 - 2012</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Trường Đại học Khoa học Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>TTH.2010-KC.10</td>
+                                        <td>
+                                            <a href="#">Ứng dụng viễn thám radar đa thời gian đánh giá khả năng hấp thụ CO2 của các loại rừng tỉnh Thừa Thiên Huế (đã nghiệm thu)</a>
+                                        </td>
+                                        <td>2010 - 2014</td>
+                                        <td>Khoa học Tự nhiên</td>
+                                        <td>Viện Tài nguyên Môi trường và Phát triển Bền vững tại Huế</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex duoi">
+                            <div>
+                                <p>Tổng Cộng: 10</p>
+                            </div>
+                            <div class="flex">
+                                <div class="phai1"><p>Hiển Thị</p></div>
+                                <div class="duoi1">
+                                    <select>
+                                        <option value="ct">10</option>
+                                        <option value="ct">9</option>
+                                        <option value="ct">8</option>
+                                        <option value="ct">7</option>
+                                        <option value="ct">6</option>
+                                        <option value="ct">5</option>
+                                        <option value="ct">4</option>
+                                        <option value="ct">3</option>
+                                        <option value="ct">2</option>
+                                        <option value="ct">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accodion-item">
+                    <div class="accodion-hearder">
+                        <p>Y TẾ</p>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </div>
+                    <div class="accodion-body">
+                        <div class="ctnc">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>STT</td>
+                                        <td>Mã đề tài</td>
+                                        <td>Tên đề tài, dự án</td>
+                                        <td>Thời gian thực hiện</td>
+                                        <td>Lĩnh Vực</td>
+                                        <td>Cơ quan chủ trì</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2021.009</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu sử dụng tia plasmamed trong điều trị bỏng và vết thương mãn tính tại Bệnh viện Trung ương Huế.</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Y tế</td>
+                                        <td>Bệnh viện Trung ương Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2021.008</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu bảo quản xương ghép đồng loại và ứng dụng điều trị trong một số bệnh lý chấn thương chỉnh hình tại Bệnh viện Trung ương Huế</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Y tế</td>
+                                        <td>Bệnh viện Trung ương Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>2021.006</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu kết quả phẫu thuật nội soi sỏi tuyến nước bọt mang tai có hỗ trợ laser YAG Holmium tại Bệnh viện Trung ương Huế</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Y tế</td>
+                                        <td>Bệnh viện Trung ương Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2021.005</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu ứng dụng công nghệ cao (dao mổ siêu âm Sonostar, vi sóng) trong điều trị ung thư gan tại Bệnh viện Trung ương Huế.</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Y tế</td>
+                                        <td>Bệnh viện Trung ương Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>2021.001</td>
+                                        <td>
+                                            <a href="#">Xây dựng cơ sở dữ liệu bệnh tật gắn liền với hệ sinh thái y tế thông minh tại tỉnh Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2021 - 2021	</td>
+                                        <td>Y tế</td>
+                                        <td>Trung tâm Kiểm soát Bệnh tật tỉnh Thừa Thiên Huế</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex duoi">
+                            <div>
+                                <p>Tổng Cộng: 5</p>
+                            </div>
+                            <div class="flex">
+                                <div class="phai1"><p>Hiển Thị</p></div>
+                                <div class="duoi1">
+                                    <select>
+                                        <option value="ct">5</option>
+                                        <option value="ct">4</option>
+                                        <option value="ct">3</option>
+                                        <option value="ct">2</option>
+                                        <option value="ct">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accodion-item">
+                    <div class="accodion-hearder">
+                        <p>KHOA HỌC KỸ THUẬT</p>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </div>
+                    <div class="accodion-body">
+                        <div class="ctnc">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>STT</td>
+                                        <td>Mã đề tài</td>
+                                        <td>Tên đề tài, dự án</td>
+                                        <td>Thời gian thực hiện</td>
+                                        <td>Lĩnh Vực</td>
+                                        <td>Cơ quan chủ trì</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2021.020</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu đánh giá diễn biến lũ và tính toán xác định hành lang thoát lũ hạ lưu trên hệ thống các sông chính thuộc địa bàn tỉnh Thừa Thiên Huế.</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Kỹ thuật</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2021.017</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu nâng cấp hệ thống ISO điện tử là phần mềm dùng chung trong chính quyền điện tử tỉnh Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Kỹ thuật</td>
+                                        <td>Chi cục Tiêu chuẩn Đo lường Chất lượng tỉnh Thừa Thiên Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>2021.015</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu, thống kê, sưu tầm các loại hình di sản văn hóa phi vật thể về Chủ tịch Hồ Chí Minh ở Thừa Thiên Huế.</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Kỹ thuật</td>
+                                        <td>Bảo tàng Hồ Chí Minh Thừa Thiên Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2021.007</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu, đánh giá thực trạng, nguy cơ rủi ro và giải pháp về ô nhiễm vi nhựa (microplastics) trong các loài thủy - hải sản đánh bắt và tiêu thụ ở tỉnh Thừa Thiên Huế.</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Kỹ thuật</td>
+                                        <td>Trường Đại học Khoa học Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>2018.031</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu hoàn thiện quy trình công nghệ nhân giống cây rau má tại huyện Quảng Điền.</a>
+                                        </td>
+                                        <td>2020 - 2021</td>
+                                        <td>Khoa học Kỹ thuật</td>
+                                        <td>Viện Công nghệ Sinh học, Đại học Huế</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex duoi">
+                            <div>
+                                <p>Tổng Cộng: 5</p>
+                            </div>
+                            <div class="flex">
+                                <div class="phai1"><p>Hiển Thị</p></div>
+                                <div class="duoi1">
+                                    <select>
+                                        <option value="ct">5</option>
+                                        <option value="ct">4</option>
+                                        <option value="ct">3</option>
+                                        <option value="ct">2</option>
+                                        <option value="ct">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accodion-item">
+                    <div class="accodion-hearder">
+                        <p>KHOA HỌC NÔNG NGHIỆP</p>
+                        <i class="fa-solid fa-chevron-down arrow"></i>
+                    </div>
+                    <div class="accodion-body">
+                        <div class="ctnc">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <td>STT</td>
+                                        <td>Mã đề tài</td>
+                                        <td>Tên đề tài, dự án</td>
+                                        <td>Thời gian thực hiện</td>
+                                        <td>Lĩnh Vực</td>
+                                        <td>Cơ quan chủ trì</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>2021.023</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu bảo tồn và phát triển giống Mai vàng Huế (Hoàng mai Huế).</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Nông nghiệp</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>2021.022</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu xây dựng và chuyển giao quy trình quản lý bệnh khảm lá sắn tổng hợp cho tỉnh Thừa Thiên Huế.</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Nông nghiệp</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>2021.019</td>
+                                        <td>
+                                            <a href="#">Nghiên cứu điều chế một số chế phẩm sinh học từ các loài thực vật bản địa có khả năng kháng sâu bệnh thay thế hóa chất bảo vệ thực vật phục vụ sản xuất nông nghiệp hữu cơ trên địa bàn Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Nông nghiệp</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>2021.010</td>
+                                        <td>
+                                            <a href="#">Xây dựng mô hình trồng và chăm sóc cây ba kích tím, cây tràm gió invitro phục vụ phát triển vùng nguyên liệu dược liệu tỉnh Thừa Thiên Huế.</a>
+                                        </td>
+                                        <td>2021 - 2021</td>
+                                        <td>Khoa học Nông nghiệp</td>
+                                        <td>Công ty TNHH Nông nghiệp MTV Lâm nghiệp Tiền Phong</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>2017-014</td>
+                                        <td>
+                                            <a href="#">Ứng dụng tiến bộ kỹ thuật để cải tạo nâng cao chất lượng đàn bò lai bằng giống bò mới BBB (Blanc Blue Benge) tại tỉnh Thừa Thiên Huế.</a>
+                                        </td>
+                                        <td>2017 - 2020</td>
+                                        <td>Khoa học Nông nghiệp</td>
+                                        <td>Trung tâm Khuyến nông tỉnh Thừa Thiên Huế</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>2020.004</td>
+                                        <td>
+                                            <a href="#">Xây dựng mô hình phát triển một số cây dược liệu dưới tán rừng tự nhiên dựa vào cộng đồng dân cư xã Phong Mỹ, huyện Phong Điền, tỉnh Thừa Thiên Huế</a>
+                                        </td>
+                                        <td>2020 - 2020</td>
+                                        <td>Khoa học Nông nghiệp</td>
+                                        <td>Hội Thiên nhiên vì cuộc sống xã Phong Mỹ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex duoi">
+                            <div>
+                                <p>Tổng Cộng: 6</p>
+                            </div>
+                            <div class="flex">
+                                <div class="phai1"><p>Hiển Thị</p></div>
+                                <div class="duoi1">
+                                    <select>
+                                        <option value="ct">6</option>
+                                        <option value="ct">5</option>
+                                        <option value="ct">4</option>
+                                        <option value="ct">3</option>
+                                        <option value="ct">2</option>
+                                        <option value="ct">1</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="n5">
+                    <h4 class="n5-header">Năm</h4>
+                    <div class="n5-body">
+                        <ul>
+                            <li><a href="#">2022</a></li>
+                            <li><a href="#">2021</a></li>
+                            <li><a href="#">2020</a></li>
+                            <li><a href="#">2019</a></li>
+                            <li><a href="#">2018</a></li>
+                            <li><a href="#">2017</a></li>
+                            <li><a href="#">2016</a></li>
+                            <li><a href="#">2015</a></li>
+                            <li><a href="#">2013</a></li>
+                            <li><a href="#">2012</a></li>
+                            <li><a href="#">2011</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="n5">
+                    <h4 class="n5-header">Lĩnh Vực</h4>
+                    <div class="n5-body">
+                        <ul>
+                            <li><a href="#">Công Thương</a></li>
+                            <li><a href="#">Giáo Dục</a></li>
+                            <li><a href="#">Kế Hoạch Đầu Tư</a></li>
+                            <li><a href="#">Khoa Học Kỹ Thuật</a></li>
+                            <li><a href="#">Khoa Học Công Nghệ</a></li>
+                            <li><a href="#">Khoa Học Xã Hội Nhân Văn</a></li>
+                            <li><a href="#">Khoa Học Y Dược</a></li>
+                            <li><a href="#">Tài Nguyên Môi Trường</a></li>
+                            <li><a href="#">Thông Tin - Truyền Thông</a></li>
+                            <li><a href="#">Tổ Chức - Hành Chính</a></li>
+                            <li><a href="#">Xã Hội</a></li>
+                            <li><a href="#">Y Tế</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="n5">
+                    <h4 class="n5-header">Lĩnh Vực</h4>
+                    <div class="n5-body">
+                        <ul>
+                            <li><a href="#">Cơ Sở</a></li>
+                            <li><a href="#">Hợp Tác</a></li>
+                            <li><a href="#">Tỉnh</a></li>
+                            <li><a href="#">Trung Ương</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="row1">
+            <div class="box">
+                <div class="box1">
+                    <h1>Hướng dẫn</h1>
+                    <div><a href="#">Điều khoản dịch vụ</a></div>
+                    <div><a href="#">Chính sách bảo mật</a></div>
+                    <div><a href="#">Điều kiện</a></div>
+                </div>
+                <div class="box2">
+                    <h1>Liên hệ</h1>
+                    <div><i class="fa-solid fa-location-dot"></i><a>950 Nguyễn Kiệm, phường 3, Q. Gò Vấp, Tp. Hồ Chí Minh</a></div>
+                    <div><i class="fa-solid fa-location-dot"></i><a>371 Lý Thường Kiệt, phường 15, Q. 11, Tp. Hồ Chí Minh</a></div>
+                    <div><i class="fa-solid fa-phone"></i><a>(+84)234567899</a></div>
+                    <div><i class="fa-solid fa-envelope"></i><a>LogyPM@gmail.com</a></div>
+                </div>
+                <div class="box3">
+                    <h1>Theo dõi</h1>
+                    <div class="address"><i class="fa-brands fa-facebook" style="color: rgb(66, 86, 218);"></i><a href="#">Facebook</a></div>
+                    <div class="address"><i class="fa-brands fa-youtube" style="color: red;"></i><a href="#">Youtube</a></div>
+                    <div class="address"><i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i><a href="#">Linkedln</a></div>
+                    <div class="address"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i><a href="#">Twitter</a></div>
+                    <div class="address"><i class="fa-brands fa-instagram" style="color: #E4405F;"></i><a href="#">Instagram</a></div>
+                </div>
+          </div>
+        </div>
+        <div class="row2">
+             &copy 2022 Yahoo. All rights reserved.Powered by WordPress VIP.
+        </div>
+    </footer>
+</body>

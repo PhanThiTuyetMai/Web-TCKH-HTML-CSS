@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/1.css" rel="stylesheet" />
+    <link href="css/2.css" rel="stylesheet" />
+    <link href="css/3.css" rel="stylesheet" />
+    <link href="ảnh/2.jpg" rel="shortcut icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"/>
+    <title>LOGY PM</title>
+</head>
+<body onload="init()">
+    <header>
+        <div class="flex canhdeu">
+            <div class="flex">
+                <div>
+                    <video class="vd" autoplay="autoplay" loop="loop" muted="muted">
+                        <source src="video/2.mp4">
+                    </video>
+                </div>
+                <div class="name">
+                    <h1  style="color: yellow; font-family: Brush Script MT; font-size: 55px;">Journal of Science and Technology</h1>
+                    <h1  style="color: red; font-family: Brush Script MT; font-size: 55px;">LOGY PM</h1>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div style="background-color: pink;" class="flex canhben">
+                <div>
+                    <ul class="menu">
+                        <li class="sub"><a href="#">Chuyên Đề</a>
+                            <ul class="menu subcontent">
+                                <li></li>
+                                <li><a href="#">Sở Hữu Trí Tuệ</a></li>
+                                <li><a href="#">Cách Mạng Công Nghiệp 4.0</a></li>
+                                <li><a href="#">Khởi Nghiệp Đổi Mới Sáng Tạo</a></li>
+                                <li><a href="#">Chương Trình Nông Thôn</a></li>
+                                <li><a href="http://127.0.0.1:5500/4.html">Công Trình Nghiêm Cứu Khoa Học</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li class="sub"><a href="#">Ngôn Ngữ </a>
+                            <ul class="menu subcontent">
+                                <li></li>
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Tiếng Việt</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="flex canhben" style="background-color: blue ;">
+                <div>
+                    <ul class="flex menu">
+                        <li><a href="http://127.0.0.1:5500/1.html" class="tieude2"><i class="fas fa-home"></i></a></li>
+                        <li><a href="http://127.0.0.1:5500/2.html" class="tieude2">Tin Tức</a></li>
+                        <li><a href="http://127.0.0.1:5500/3.html" class="tieude2">Video</a></li>
+                        <li><a href="#" class="tieude2">Số Báo</a></li>
+                        <li><a href="#" class="tieude2">Gửi Bài</a></li>
+                        <li><a href="#" class="tieude2">Trợ Giúp</a></li>
+                        <li class="sub"><a href="#" class="tieude2">Khác</a>
+                            <ul class="menu subcontent">
+                                <li><a href="#">Liên Lạc</a></li>
+                                <li><a href="#">Phản Hồi</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex">
+                    <div>
+                        <form class="search">
+                            <input type="text" list="suggest" class="searchTerm"  onkeydown="this.style.backgroundColor='aqua'" onkeyup="this.style.backgroundColor='white'" placeholder="Bạn muốn tìm gì?">
+                            <datalist id="suggest">
+                                <option value="Tin Tức">
+                                <option value="Video">
+                                <option value="Gửi Bài">
+                                <option value="Số Báo">
+                                <option value="Công Trình Nghiêm Cứu Khoa Học">
+                            </datalist>
+                            <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="flex bt-group">
+                            <a href="#" class="bt"><i class="fa-solid fa-user"></i> Đăng Nhập</a>
+                            <a href="http://127.0.0.1:5500/dangnhap.html" class="bt"><i class="fas fa-check"></i> Đăng Ký</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <a href="http://127.0.0.1:5500/1.html"  style="color: red"><i class="fas fa-home"></i></a>
+                <a href="http://127.0.0.1:5500/2.html" style="color: red;"> / Tin Tức</a>
+                <a href="http://127.0.0.1:5500/3.html" style="color: red;"> / Video</a>
+            </div>
+        </nav>
+    </header>
+    <section class="c2">
+        <div>
+            <h1 class="dvd"><span>VIDEO</span></h1>
+        </div>
+        <div class="flex">
+            <div>
+                <div class="videos">
+                    <iframe controls="1" width="970" height="515" src="https://www.youtube.com/embed/6lpTNE6jX8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"></iframe>
+                </div>
+                <div>
+                    <a href="#"><h1 class="vd1">Từ việc JABES chính thức được công nhận vào Scopus đến hành trình nâng tầm thương hiệu học thuật UEH</h1></a>
+                </div>
+                <div class="flex">
+                    <p style="color: white;"><i class="fa-solid fa-clock-rotate-left"></i>  154 lượt xem | 18 thg 3, 2022</p>
+                    <p class="trang"><a href="#" style="color: white;"><i class="fa-solid fa-square-envelope"></i></a></p>
+                </div>
+                <div>
+                    <hr width="93.5%" color="white" align="left">
+                </div>
+                <div>
+                    <p class="vd2">
+                    Tạp chí Nghiên cứu Kinh tế và Kinh doanh Châu Á (JABES) trực thuộc Đại học Kinh tế TP. Hồ Chí Minh là một Tạp chí khoa học về lĩnh vực kinh tế và kinh doanh có tầm ảnh hưởng trong cộng đồng khoa học.
+                    Bằng những nỗ lực và cống hiến bền bỉ, ngày 6/3/2022, Tạp chí JABES đã ghi tên vào danh sách các tạp chí thuộc danh mục SCOPUS - cơ sở dữ liệu của Nhà xuất bản Elsevier (Hà Lan), nơi cung cấp các bài báo khoa học đáng tin cậy nhất, chính thức trở thành Tạp chí khối ngành KHXH&NV, Kinh doanh và Quản lý đầu tiên của Việt Nam được công nhận vào Danh mục SCOPUS.
+                    </p>
+                </div>
+                <div>
+                    <p class="quangcao3">Liên Hệ Quảng Cáo</p>
+                </div>
+            </div>
+            <div class="canht">
+                <a><p style="color: white; font-weight: bold;">XEM TIẾP</p></a>
+                <div>
+                    <div class="flex">
+                        <div>
+                            <iframe width="180" height="120" src="https://www.youtube.com/embed/yq7JZKwgwNU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <a href="#"><p class="vdn1">Quét sóng - Tên lửa hành trình 9M729-SSC-8</p></a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <a href="#"><iframe width="180" height="120" src="https://www.youtube.com/embed/jIf5a2HjRVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                        </div>
+                        <div>
+                            <a href="#"><p class="vdn1">Phấn đấu xây dựng một tạp chí khoa học ứng dụng phát triển</p></a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <a href="#"><iframe width="180" height="120" src="https://www.youtube.com/embed/4ZR8-iWzG_Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                        </div>
+                        <div>
+                            <a href="#"><p class="vdn1">Vinmec công bố kết quả nghiên cứu bộ Gen người Việt: Nhiều bất ngờ lớn</p></a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <a href="#"><iframe width="180" height="120" src="https://www.youtube.com/embed/KSzOuSqIkVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                        </div>
+                        <div>
+                            <a href="#"><p class="vdn1">Vươn tới những vì sao Tập 3 | Khám Phá Thế Giới</p></a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <a href="#"><iframe width="180" height="120" src="https://www.youtube.com/embed/2SLiIoZD604" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                        </div>
+                        <div>
+                            <a href="#"><p class="vdn1">Vươn tới những vì sao Tập 2 | Khám Phá Thế Giới</p></a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <a href="#"><iframe width="180" height="120" src="https://www.youtube.com/embed/M-cILTomSGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                        </div>
+                        <div>
+                            <a href="#"><p class="vdn1">Tàu TITANIC và Những Bí Ẩn Có Thế Bạn Chưa Biết</p></a>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            <a href="#"><iframe width="180" height="120" src="https://www.youtube.com/embed/7-UKqeGHycQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                        </div>
+                        <div>
+                            <a href="#"><p class="vdn1">Khoa học gia phát hiện trí tuệ sinh mệnh cao tầng trong 3 tỷ mã DNA?</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 style="color: white;">Bình luận</h1>
+            <div>
+                <textarea cols="143" rows="7" name="description" placeholder="
+                Ý kiến của bạn sẽ được biên tập trước khi đăng. Xin vui lòng gõ dấu tiếng Việt"></textarea>
+            </div>
+            <div class="canhp">
+                <input class="b1" type="button" name="submit" value="Gửi Bình Luận">
+            </div>
+        </div>
+        <div>
+            <h1 style="color: white" class="dvd">VIDEO MỚI NHẤT</h1>
+            <div>
+                <div class="flex top1">
+                    <div>
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/AC-m4fJAqyg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="tren3">
+                        <div>
+                            <a href="#"><h2 style="color: red;">40 Thí Nghiệm Kiểm Chứng Những Thủ Thuật Khoa Học</h2></a>
+                            <p>Video này tiết lộ sự thật về thủ thuật khoa học tại nhà. Chúng tôi đã thử nghiệm rất nhiều thủ thuật để tìm hiểu xem chúng có hoạt động không. Ngừng làm mọi thứ và xem video tuyệt vời này mà bạn sẽ yêu thích!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex top1">
+                    <div>
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/Q3baMo2avZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="tren3">
+                        <div>
+                            <a href="#"><h2 style="color: red;">Tốt nghiệp thủ khoa thạc sỹ ở tuổi 72, cụ ông truyền cảm hứng cho giới trẻ</h2></a>
+                            <p >Tốt nghiệp thủ khoa thạc sỹ ở tuổi 72, cụ ông truyền cảm hứng cho giới trẻ 
+                                Không chỉ là tấm gương cho con cháu trong gia đình, hành trình học không ngừng nghỉ của ông Chinh - còn là nguồn cảm hứng, động lực học tập, cho thế hệ trẻ hôm nay.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex top1">
+                    <div>
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/H7nrU_16jNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="tren3">
+                        <div>
+                            <a href="#"><h2 style="color: red;">Thảm Họa Khủng Khiếp Đã Kết Liễu Các Nền Văn Minh Cổ Đại | Vũ Trụ Nguyên Thủy</h2></a>
+                            <p>Trong tác phẩm nổi tiếng của mình “Dấu vân tay của Thượng đế”, Graham Hancock nói rằng một số nền văn minh trên Trái đất đã cho thấy dấu hiệu của trí tuệ kì lạ trong các hệ thống kiến trúc, khoa học và chữ viết. Nền văn minh của nhân loại phát triển cao hơn rất nhiều so với nhận thức ban đầu của chúng ta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex top1">
+                    <div>
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/-oPa6GF34Us" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="tren3">
+                        <div>
+                            <a href="#"><h2 style="color: red;">Đế Chế Maya - Nền Văn Minh Thịnh Vượng Và Bí Ẩn Bậc Nhất Lịch Sử Nhân Loại</h2></a>
+                            <p>Từ trước tới nay, mỗi khi nhắc đến các nền văn minh cổ đại, ta thường nhắc đến Ai Cập. Tuy nhiên, sẽ là một thiếu sót nếu không nhắc đến nền văn minh Maya (Mexico cổ đại) - nền văn minh tiền đề cho rất nhiều đế chế lịch sử khác. Trong thời kì này, cư dân nơi đó đã có những khám phá và phát minh mới về thiên văn học, toán học và nghệ thuật… Và cũng như nhiều nền văn minh khác, đế chế Maya đã đột nhiên biến mất một cách bí ẩn, để lại dấu hỏi lớn cho các nhà nghiên cứu sau này.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex top1">
+                    <div>
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/gd7srVp6G78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="tren3">
+                        <div>
+                            <a href="#"><h2 style="color: red;">Số "0" - Phát Minh Vĩ Đại Của Nhân Loại Và Những Điều Kỳ Diệu Của “Sự Không Có Gì”</h2></a>
+                            <p>ADN của con người được tạo thành từ 4 kí tự - A, C, G và T. Trong khi đó "ADN" của một cỗ máy chỉ bao gồm hai kí tự là 0 và 1. Xét tới tầm quan trọng của máy tính, ta có thể thấy số 0 làm nên một nửa sự thành công của các cỗ máy tính toán. Nếu không có số 0, có lẽ toàn bộ kỷ nguyên số này sẽ sụp đổ chỉ trong chưa đầy 1 giây. Một số loài động vật có thể hiểu được khái niệm của "không có gì", nhưng chỉ có duy nhất loài người, tiến hóa lên đủ cao và đủ thông minh để sử dụng "số không" như một thứ công cụ đắc lực, xây dựng nên nền văn minh hiện đại.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex top1">
+                    <div>
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/TgUd-GKjBjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="tren3">
+                        <div>
+                            <a href="#"><h2 style="color: red;">Nikola Tesla Và Nỗi Ám Ảnh Về Dãy Số 3, 6, 9</h2></a>
+                            <p>Nikola Tesla được biết đến là nhà phát minh vĩ đại của thế kỷ 20 khi đã cho ra đời hơn 300 sáng chế, trong đó đặc biệt nhất phải kể tới phát minh điện xoay chiều. Tuy nhiên, cuộc đời của Tesla lại khá lận đận khi vào thời đại của ông, nhân loại không đủ khả năng để hiểu hết những ý tưởng của Tesla. Vậy nên, họ đã gán cho ông biệt danh "nhà khoa học điên". Và một trong những "cái điên" đó chính là nỗi ám ảnh của ông về con số 3,6, 9.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex top1">
+                    <div>
+                        <iframe width="320" height="250" src="https://www.youtube.com/embed/SmTJCRPlkbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="tren3">
+                        <div>
+                            <a href="#"><h2 style="color: red;">Khám phá bí ẩn các hành tinh trong Hệ Mặt trời | Khoa học vũ trụ - Top thú vị |</h2></a>
+                            <p>Hệ mặt trời hay còn được gọi là Thái dương hệ, là 1 hệ hành tinh có mặt trời ở trung tâm và các thiên thể nằm trong phạm vi lực hấp dẫn của mặt trời, tất cả chúng được hình thành từ sự suy sụp của 1 đám mây phân tử khổng lồ cách đây 4,6 tỷ năm. Cho đến nay chúng ta đều biết rằng, hệ mặt trời có 8 hành tinh được xác nhận, ngoài ra còn có 1 hành tinh giả thuyết đó là hành tinh thứ 9, nó có thể đang lang thang đâu đó bên ngoài vành đai Kuiper. Vậy hôm nay, Top thú vị mời các bạn cùng đi khám phá những bí ẩn của các hành tinh trong hệ mặt trời</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div  class="xt"> 
+                <a href="#"><h1 style="color: white;">XEM THÊM</h1></a>
+            </div>
+        </div>
+    </section>
+    <div id="backtop">
+        <i class = "fa-solid fa-arrow-up-long"></i>
+    </div>
+    <footer>
+        <div class="row1">
+            <div class="box">
+                <div class="box1">
+                    <h1>Hướng dẫn</h1>
+                    <div><a href="#">Điều khoản dịch vụ</a></div>
+                    <div><a href="#">Chính sách bảo mật</a></div>
+                    <div><a href="#">Điều kiện</a></div>
+                </div>
+                <div class="box2">
+                    <h1>Liên hệ</h1>
+                    <div><i class="fa-solid fa-location-dot"></i><a>950 Nguyễn Kiệm, phường 3, Q. Gò Vấp, Tp. Hồ Chí Minh</a></div>
+                    <div><i class="fa-solid fa-location-dot"></i><a>371 Lý Thường Kiệt, phường 15, Q. 11, Tp. Hồ Chí Minh</a></div>
+                    <div><i class="fa-solid fa-phone"></i><a>(+84)234567899</a></div>
+                    <div><i class="fa-solid fa-envelope"></i><a>LogyPM@gmail.com</a></div>
+                </div>
+                <div class="box3">
+                    <h1>Theo dõi</h1>
+                    <div class="address"><i class="fa-brands fa-facebook" style="color: rgb(66, 86, 218);"></i><a href="#">Facebook</a></div>
+                    <div class="address"><i class="fa-brands fa-youtube" style="color: red;"></i><a href="#">Youtube</a></div>
+                    <div class="address"><i class="fa-brands fa-linkedin" style="color: #0A66C2;"></i><a href="#">Linkedln</a></div>
+                    <div class="address"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i><a href="#">Twitter</a></div>
+                    <div class="address"><i class="fa-brands fa-instagram" style="color: #E4405F;"></i><a href="#">Instagram</a></div>
+                </div>
+          </div>
+        </div>
+        <div class="row2">
+             &copy 2022 Yahoo. All rights reserved.Powered by WordPress VIP.
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('#backtop').fadeIn(); // nếu như scrollTop khác 0 thì fade in
+                }else{
+                    $('#backtop').fadeOut(); // nguoc lai fade out
+                }
+            });
+            $('#backtop').click(function(){
+                $('html,body').animate({scrollTop:0}, 700);
+            })
+        });
+    </script>
+</html>

@@ -1,0 +1,30 @@
+.main{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.ads{
+    display: block;
+    padding: 300px 0;
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.video >div:first-child{
+    padding: 255px;
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+}
+.ctrl{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.ctrl a{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}

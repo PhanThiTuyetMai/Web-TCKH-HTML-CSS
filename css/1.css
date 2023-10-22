@@ -1,0 +1,325 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+}
+.flexx{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tieude2{
+    color: whitesmoke;
+    font-weight: bold;
+}
+.canhdeu{
+    height: 250px;
+    background-image: linear-gradient( to top, black, purple);
+}
+aside > div{
+    width: 10%;
+    padding: 4rem 0;
+    height: 270px;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 25px;
+    background: linear-gradient(aqua,blue);
+    color: white;
+    border-radius: 5px 5px 5px 5px;
+    position: fixed;
+}
+aside>div:first-child{
+    left: 3%;
+}
+aside>div:last-child{
+    right: 3%;
+}
+.vd{
+    width: 100%;
+    height: 100%;
+}
+.name{
+   padding: 20px;
+   font-size: 20px;
+   text-align: center;
+   margin-left: 150px;
+   line-height: 30px;
+}
+ul.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul.menu>li>a{
+    display: block;
+    padding: 15px 11px;
+}
+ul.menu>li>a:hover{
+    background-color: blue;
+    color: red;
+}
+.subcontent{
+    display: none !important; /* ẩn đi các thành phần */
+    position: absolute; /* không chiếm lấy không gian của không gian cha của nó  */
+    background-color: aqua;
+    z-index: 1; /* cho phép hiện đè lên các thành phần khác */
+}
+.sub:hover .subcontent{
+    display: block !important;
+}
+.canhben{
+    justify-content: space-between;
+}
+.search{
+    width: 100%;
+    display: flex;
+    margin-right: 40px;
+}
+.searchTerm{
+    width: 270px;
+    border-right: none;
+    padding: 10px;
+    height: 48px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid gold;
+    outline: none;
+    color: black;
+}
+.searchButton{
+    width: 50px;
+    height: 48px;
+    background-color: lightblue;
+    align-items: center;
+    color: antiquewhite;
+    cursor: pointer;
+    margin-top: 0;
+    font-size: 20px;
+    border: 2px solid gold;
+}
+.bt{
+    color: red;
+    display: block;
+    padding: 15px 10px;
+    margin-right: 20px;
+    align-content: center;
+}
+.bt-group> .bt:first-child{
+    background-color: gold;
+    border-radius: 5px 5px 5px 5px;
+}
+.bt-group> .bt:last-child{
+    background-color: yellowgreen;
+    border-radius: 5px 5px 5px 5px;
+}
+.bt-group> .bt:hover{
+        opacity: 0.6;
+}
+.gioithieu{
+    display: block;
+    color:red;
+    box-shadow: 10px 10px 5px 0 lightgreen; 
+    background-color: green; 
+    font-size: 30px;
+    align-items: center;
+    text-align: center;
+}
+.ndgt p{
+    padding: 12px;
+    text-align: justify;
+    line-height: 16px;
+}
+.trangbia img{
+    width: 100%;
+    height: 100%;
+}
+.c{
+    width: 80%;
+    margin: 0 auto;
+}
+.anhtinn{
+    overflow: hidden;
+    max-width: 990px;
+}
+.anhtinn a>h1{
+    font-size: 30px; 
+    color: red;
+}
+.anhtinn a>h1:hover{
+   color: blue;
+}
+.anhtin{
+    align-items: center;
+    width: 100%;
+    height: 450px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.anhtin:hover{
+    transform: scale(1.1);
+}
+.an{
+    transition: all 0.3s ease-in-out;
+}
+.an:hover{
+    transform: scale(1.1);
+}
+.xtt a{
+    color: orangered; 
+    font-size: 18px;
+}
+.xtt a:hover{
+    color: blue;
+}
+.tin{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+.tin:hover{
+    color: orange;
+}
+.mauchu{
+    color: black;
+}
+.mauchu:hover{
+    color: red;
+}
+.ngaytin{
+    display: block;
+    padding: 10px;
+    align-items: center;
+}
+.canhtrai{
+    border-right: 3px solid black;
+    width: 100%;
+}
+h1.subject{
+    border-bottom: 4px solid red;
+  }
+h1.subject > span{
+    background-color: darkblue;
+    display: block;
+    color: white;
+    padding: 14.8px;
+    width: 40%;
+    font-size: 1em;
+    position: relative;
+  }
+h1.subject > span::after{
+    content: " ";
+    border-width: 24px;
+    border-style: solid;
+    border-color: transparent transparent darkblue darkblue;
+    left: 100%;
+    bottom: 0px;
+    position:absolute;
+}
+div.book{
+    width: 25%;
+    padding: 1.5%;
+ }
+ div.book img:hover{
+    width: 100%;
+    transform: skewY(-15deg);
+    box-shadow: 0 1px 50px 0 orange;
+ }
+ div.book img{
+    width: 100%;
+ }
+ .dinh.book{
+    align-items: flex-start !important;
+ }
+ .book img{
+    height: 307px;
+ }
+ .book>div>a{
+    color: white;
+ }
+ .book>div>a:hover{
+    color: blue;
+ }
+ p.sbook{
+    padding: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+ }
+ .sbook img{
+    width: 20%;
+ }
+ footer{
+    background: linear-gradient(lightblue, yellow, green, pink );
+    width: 100%;
+    color:rgb(0, 55, 113);
+    height: 250px;
+}
+footer a{
+  margin-left: 5px;
+  text-decoration: none;
+}
+footer a:hover{
+    color: red;
+    text-decoration: underline;
+  }
+.row1{
+    float: left;
+    width: 100%;
+}
+.row2{
+    text-align: center;
+    margin-top: 110px;
+}
+.box{
+    width: 70%;
+    margin: 0 auto;
+}
+.box1{
+    width: 30%;
+    float: left;
+}
+.box2{
+    width: 50%;
+    float: left;
+}
+.box3{
+    width: 20%;
+    float: left;
+}
+.address{
+   margin-left: 20px;
+}
+#backtop{
+    width: 50px;
+    height: 50px;
+    background: tomato;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
+section.banner{
+    animation: doinen linear 20s infinite;
+    background-repeat: none;
+    cursor: pointer;
+  }
+@keyframes doinen
+{
+    15%{
+        background-color: #1c3ba29d;
+    }
+    55%{
+        background-color: rgb(21, 218, 18);
+    }
+    70%{
+        background-color: rgb(22, 201, 213)
+    }
+}

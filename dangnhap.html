@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link href="ảnh/2.jpg" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/dnh.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+    <script src="java/dn.js"></script>
+</head>
+<body>
+      <div class="container">
+        <form action=""method="Form" onsubmit="return validateForm() ">
+          <h1 style="color: red;">Đăng ký</h1>
+          <div class="form-control">
+            <input id="username" type="text" placeholder="Tên tài khoản">
+            <span></span>
+          </div>
+            <div class="form-control">
+              <input id="email" type="email" placeholder="Email">
+              <span></span>
+            </div>
+          <div class="form-control">
+              <from action="somefile.php"><input id="password" type="password" placeholder="Mật khẩu">
+              <span></span>
+          </div>
+          <div class="form-control">
+                <input id="password2" type="password" placeholder="Nhập lại mật khẩu">
+                <span></span>
+          </div>
+          <div class="tick">
+            <label class="bell">
+              <input type="checkbox" class="checkbox">
+              <span>Tôi đồng ý các Điều khoản & Điều kiện</span>
+            </label>
+            <div class="clear"> </div>
+          </div>
+          <button type="submit" class="submit chu"><span class="chu">Đăng ký</span></button>
+          <div class="link">Bạn đã có tài khoản? <a href="#">Đăng nhập</a>
+          </div>
+      </form>
+    </div>
+</body>
+</html>
